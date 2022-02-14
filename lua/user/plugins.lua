@@ -61,6 +61,8 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

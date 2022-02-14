@@ -58,3 +58,6 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+keymap("n", "<leader>f", ":Telescope find_files <CR>", opts)
+keymap("n", "<leader>r", ":Telescope command_history<CR>", opts)
+keymap("n", "<leader>t", ":Telescope live_grep<CR>", opts)
