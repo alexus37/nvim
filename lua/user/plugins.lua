@@ -46,7 +46,14 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
-  use "github/copilot.vim" --co pilot 
+  use "github/copilot.vim" -- co pilot 
+  use "kyazdani42/nvim-tree.lua"
+  use "kyazdani42/nvim-web-devicons"
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+  use 'nvim-lualine/lualine.nvim'
+  use "akinsho/toggleterm.nvim"
+  
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
 
@@ -57,12 +64,16 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
@@ -73,6 +84,7 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use "JoosepAlviste/nvim-ts-context-commentstring"
+
   -- Git
   use "lewis6991/gitsigns.nvim"
 
