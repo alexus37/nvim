@@ -61,3 +61,9 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>f", ":Telescope find_files <CR>", opts)
 keymap("n", "<leader>r", ":Telescope command_history<CR>", opts)
 keymap("n", "<leader>t", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>g", ":Telescope git_status<CR>", opts)
+
+
+-- insert newline without leaving normal_mode
+keymap("n", "<leader>o", "o<ESC>", opts)
+keymap("n", "<leader>O", "O<ESC>", opts)
