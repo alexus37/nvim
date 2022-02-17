@@ -57,6 +57,8 @@ return packer.startup(function(use)
   use "justinmk/vim-sneak"
   use "ahmedkhalf/project.nvim"
   use "lukas-reineke/indent-blankline.nvim"
+  use "folke/which-key.nvim"
+  use "goolord/alpha-nvim"
 
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
