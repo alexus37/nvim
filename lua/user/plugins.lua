@@ -55,6 +55,8 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "unblevable/quick-scope"
   use "justinmk/vim-sneak"
+  use "ahmedkhalf/project.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
