@@ -68,3 +68,4 @@ keymap("n", "<leader>g", ":Telescope git_status<CR>", opts)
 -- insert newline without leaving normal_mode
 keymap("n", "<leader>o", "o<ESC>", opts)
 keymap("n", "<leader>O", "O<ESC>", opts)
+keymap("n", "<leader>d", "\"_dd<CR>", opts)
