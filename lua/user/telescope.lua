@@ -101,6 +101,13 @@ telescope.setup {
         -- even more opts
       },
     },
+    extensions = {
+      frecency = {
+        show_scores = false,
+        show_unindexed = true,
+        ignore_patterns = {"*.git/*", "*/tmp/*"},
+      },
+    },
     -- Your extension configuration goes here:
     -- extension_name = {
     --   extension_config_key = value,

@@ -60,6 +60,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "goolord/alpha-nvim"
   use "Shatur/neovim-session-manager"
+
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
 
@@ -82,7 +83,9 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-frecency.nvim"
   use "nvim-telescope/telescope-ui-select.nvim"
+  use "tami5/sqlite.lua" 
 
   -- treesitter
   use {
