@@ -74,9 +74,9 @@ cmp.setup {
     ["<CR>"] = cmp.mapping.confirm { select = true },
     ["<Tab>"] = cmp.mapping(function(fallback)
       local copilot_keys = vim.fn['copilot#Accept']()
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expandable() then
+      -- if cmp.visible() then
+        -- cmp.select_next_item()
+      if luasnip.expandable() then
         luasnip.expand()
       elseif luasnip.expand_or_jumpable() then
         luasnip.expand_or_jump()
