@@ -38,6 +38,10 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>x", ":Bdelete<CR>", opts)
 
+--- git signs hunk navigation
+keymap("n", "<leader>[", ":Gitsigns prev_hunk<CR>", opts)
+keymap("n", "<leader>]", ":Gitsigns next_hunk<CR>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
