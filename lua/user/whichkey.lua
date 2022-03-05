@@ -177,6 +177,7 @@ local mappings = {
   a = {
     name = "AX commands",
     h = { "<C-W>s", "Split horizontal" },
+    q = { "<C>g", "Show path of cur file" },
     v = { "<C-W>h", "Split vertical" },
     j = { "<C-j> accept copilot suggestion"},
     t = { "<C-x> go to file selection as a split (telescope)"},

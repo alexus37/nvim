@@ -62,7 +62,8 @@ return packer.startup(function(use)
   use "Shatur/neovim-session-manager"
 
   -- Colorschemes
-  use "lunarvim/darkplus.nvim"
+  use "martinsione/darkplus.nvim"
+  use "chrisbra/Colorizer"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

@@ -63,7 +63,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
-keymap("n", "<leader>f", ":Telescope find_files <CR>", opts)
+keymap("n", "<C-p>", ":Telescope find_files <CR>", opts)
 keymap("n", "<leader>r", ":Telescope command_history<CR>", opts)
 keymap("n", "<leader>t", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>g", ":Telescope git_status<CR>", opts)
@@ -73,3 +73,7 @@ keymap("n", "<leader>g", ":Telescope git_status<CR>", opts)
 keymap("n", "<leader>o", "o<ESC>", opts)
 keymap("n", "<leader>O", "O<ESC>", opts)
 keymap("n", "<leader>d", "\"_dd<CR>", opts)
+
+-- create terminals
+keymap("n", "<leader>n", ":ToggleTerm direction=horizontal <CR>", opts)
+keymap("n", "<leader>m", ":ToggleTerm direction=vertical size=80<CR>", opts)
