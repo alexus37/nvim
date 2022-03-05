@@ -56,6 +56,9 @@ keymap("v", "<C-S-j>", ":m .+1<CR>==", opts)
 keymap("v", "<C-S-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
+-- copy text system wide
+keymap("v", "<leader>c", ':OSCYank<CR>', opts)
+
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)

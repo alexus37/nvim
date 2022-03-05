@@ -60,6 +60,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "goolord/alpha-nvim"
   use "Shatur/neovim-session-manager"
+  use "ojroques/vim-oscyank"
 
   -- Colorschemes
   use "martinsione/darkplus.nvim"
