@@ -61,6 +61,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "Shatur/neovim-session-manager"
   use "ojroques/vim-oscyank"
+  use "sudormrfbin/cheatsheet.nvim"
 
   -- Colorschemes
   use "martinsione/darkplus.nvim"
