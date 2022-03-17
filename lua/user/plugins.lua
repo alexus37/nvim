@@ -61,7 +61,6 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "Shatur/neovim-session-manager"
   use "ojroques/vim-oscyank"
-  use "axelf4/vim-strip-trailing-whitespace"
 
   -- Colorschemes
   use "martinsione/darkplus.nvim"
@@ -87,8 +86,10 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-frecency.nvim"
-  use "nvim-telescope/telescope-ui-select.nvim"
+  -- use "nvim-telescope/telescope-ui-select.nvim"
   use "tami5/sqlite.lua" 
+  use {'stevearc/dressing.nvim'}
+
 
   -- treesitter
   use {

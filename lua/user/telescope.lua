@@ -95,18 +95,16 @@ telescope.setup {
         filetypes = {"png", "webp", "jpg", "jpeg"},
         find_cmd = "rg" -- find command (defaults to `fd`)
       },
-    ["ui-select"] = {
-      require("telescope.themes").get_dropdown {
-        previewer = false,
-        -- even more opts
-      },
-    },
-    extensions = {
-      frecency = {
-        show_scores = false,
-        show_unindexed = true,
-        ignore_patterns = {"*.git/*", "*/tmp/*"},
-      },
+    -- ["ui-select"] = {
+    --   require("telescope.themes").get_dropdown {
+    --     previewer = false,
+    --     -- even more opts
+    --   },
+    -- },
+    frecency = {
+      show_scores = false,
+      show_unindexed = true,
+      ignore_patterns = {"*.git/*", "*/tmp/*"},
     },
     -- Your extension configuration goes here:
     -- extension_name = {
@@ -116,4 +114,4 @@ telescope.setup {
   },
 }
 
-telescope.load_extension "ui-select"
+-- telescope.load_extension "ui-select"
