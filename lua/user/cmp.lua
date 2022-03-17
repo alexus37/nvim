@@ -8,6 +8,9 @@ if not snip_status_ok then
   return
 end
 
+-- add rails snippets
+luasnip.filetype_extend("ruby", {"rails"})
+
 require("luasnip/loaders/from_vscode").lazy_load()
 
 local check_backspace = function()
@@ -15,7 +18,6 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
--- ? ? ? ? ? ? some other good icons
 local kind_icons = {
   Text = "",
   Method = "m",

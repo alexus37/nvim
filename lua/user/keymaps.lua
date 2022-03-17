@@ -58,6 +58,8 @@ keymap("v", "p", '"_dP', opts)
 
 -- copy text system wide
 keymap("v", "<leader>c", ':OSCYank<CR>', opts)
+keymap("n", "<leader>c", ':OSCYankReg %<CR>', opts)
+
 
 -- Visual Block --
 -- Move text up and down

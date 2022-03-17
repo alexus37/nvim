@@ -1,5 +1,4 @@
 require "user.options"
-require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme"
 require "user.cmp"
@@ -19,3 +18,6 @@ require "user.indentline"
 require "user.whichkey"
 require "user.alpha"
 require "user.session-manager"
+
+
+require "user.keymaps"
