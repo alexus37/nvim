@@ -61,6 +61,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "Shatur/neovim-session-manager"
   use "ojroques/vim-oscyank"
+  use "axelf4/vim-strip-trailing-whitespace"
 
   -- Colorschemes
   use "martinsione/darkplus.nvim"
