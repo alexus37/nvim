@@ -11,10 +11,15 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup {
   debug = false,
   sources = {
+    -- Typescript/ javascript
     formatting.prettier,
+    diagnostics.eslint,
+    -- formatting.eslint,
+    -- Ruby
+    formatting.rubocop,
+    diagnostics.rubocop,
+    -- python
     formatting.black.with { extra_args = { "--fast" } },
-    diagnostics.eslint_d,
-    -- formatting.stylua,
     diagnostics.flake8,
   },
 }
