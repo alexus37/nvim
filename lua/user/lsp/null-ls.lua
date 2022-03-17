@@ -13,7 +13,7 @@ null_ls.setup {
   sources = {
     formatting.prettier,
     formatting.black.with { extra_args = { "--fast" } },
-    -- formatting.yapf,
+    diagnostics.eslint_d,
     -- formatting.stylua,
     diagnostics.flake8,
   },
